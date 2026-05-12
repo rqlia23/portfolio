@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Raquel</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --accent: #22c55e;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #ffffff, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    section h2 {
+      margin-bottom: 16px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    ul.learning {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    ul.learning li {
+      margin-bottom: 8px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: #dcfce7;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      background: var(--accent);
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    .links a.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 60px;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Raquel Suárez Moreno</h1>
+    <p>
+      Mi historia: Vengo de producto, entiendo el negocio y me gusta aprender creando proyectos desde cero, para entender también la parte técnica y, así, construir mejor.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre mí</h2>
+      <h3>Trayectoria profesional</h3>
+      <p>
+      Mi trayectoria como <strong>Product Owner</strong> comenzó en 2019, cuando descubrí el mundo <strong>Agile</strong> y una forma de trabajar con la que conecté desde el primer momento.
+      </p>
+      <p>
+      Desde entonces, he consolidado mi experiencia impulsando productos y aportando valor en entornos dinámicos, donde la adaptación y la mejora continua son clave.
+      </p>
+      <p>
+      Mi forma de trabajar se caracteriza por la <strong>organización</strong>, un enfoque <strong>metódico</strong> y una clara orientación a la <strong>resolución de problemas</strong>, buscando transformar los retos en oportunidades de mejora.
+      </p>
+    </section>
+    
+    <section>
+      <h2>Proyectos</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>🐍 El Juego de la Serpiente</h3>
+          <p><em>Creado en Mayo de 2026</em></p>
+          <p>Un videojuego inspirado en el clásico Snake de Nokia, desarrollado desde cero con HTML, CSS y JavaScript.
+            Contiene animaciones y pequeños detalles visuales que le dan personalidad al juego, incluyendo frutas especiales, bombas y muros dinámicos.
+            El juego es totalmente responsive y se puede jugar tanto en ordenador como en dispositivos móviles.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Canvas</span>
+          </div>
+          <div class="links">
+            <a href="https://rqlia23.github.io/Snake-Game/" target="_blank">Jugar</a>
+            <!--<a class="secondary" href="https://github.com/rqlia23/Snake-Game" target="_blank">Código</a>-->
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <!--h2>Proyectos</h2-->
+      <div class="projects">
+        <article class="card">
+          <h3>Juego 2</h3>
+          <p>Descripción del juego</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Canvas</span>
+          </div>
+          <div class="links">
+            <a href="https://rqlia23.github.io/Snake-Game/" target="_blank">Jugar</a>
+            <!--<a class="secondary" href="https://github.com/rqlia23/Snake-Game" target="_blank">Código</a>-->
+          </div>
+      </div>
+    </section>
+
+    <!--section>
+      <h2>Aprendizaje</h2>
+      <p>Con este proyecto he aprendido y reforzado conceptos clave del desarrollo web y de videojuegos:</p>
+      <ul class="learning">
+        <li>Uso de <strong>JavaScript</strong> para gestionar la lógica del juego y los estados.</li>
+        <li>Dibujo y animación con <strong>Canvas</strong>.</li>
+        <li>Gestión de eventos de teclado y táctiles para controles multiplataforma.</li>
+        <li>Diseño de mecánicas de juego: niveles, dificultad progresiva y obstáculos.</li>
+        <li>Mejora de la experiencia de usuario con animaciones, mensajes y reinicios automáticos.</li>
+      </ul>
+    </section-->
+
+  </main>
+
+  <footer>
+    <p>Contacto</p>
+    <a href="https://www.linkedin.com/in/raquel-suarez-moreno/" target="_blank">LinkedIn</a>
+    <a href="mailto:raquelsmoreno91@example.com">Email</a>
+  </footer>
+
+</body>
+</html>
