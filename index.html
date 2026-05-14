@@ -134,6 +134,22 @@
       text-decoration: none;
       margin: 0 10px;
     }
+    
+    .project-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    
+    .project-image {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .project-image {
+      transform: scale(1.03);
+    }
 
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
@@ -144,90 +160,80 @@
 
   <header>
     <h1>Raquel Suárez Moreno</h1>
-    <p>
-      Mi historia: Vengo de producto, entiendo el negocio y me gusta aprender creando proyectos desde cero, para entender también la parte técnica y, así, construir mejor.
-    </p>
+    <p>Product Owner con enfoque e interés en UI/UX y desarrollo frontend.<br>
+    Me interesa entender el producto de principio a fin y construir experiencias digitales útiles, claras y centradas en el usuario. Me gusta aprender creando proyectos desde cero, para entender también la parte técnica y, así, construir mejor.</p>
   </header>
 
   <main>
     <section>
       <h2>Sobre mí</h2>
       <h3>Trayectoria profesional</h3>
-      <p>
-      Mi trayectoria como <strong>Product Owner</strong> comenzó en 2019, cuando descubrí el mundo <strong>Agile</strong> y una forma de trabajar con la que conecté desde el primer momento.
-      </p>
-      <p>
-      Desde entonces, he consolidado mi experiencia impulsando productos y aportando valor en entornos dinámicos, donde la adaptación y la mejora continua son clave.
-      </p>
-      <p>
-      Mi forma de trabajar se caracteriza por la <strong>organización</strong>, un enfoque <strong>metódico</strong> y una clara orientación a la <strong>resolución de problemas</strong>, buscando transformar los retos en oportunidades de mejora.
-      </p>
+      <p>Mi trayectoria como <strong>Product Owner</strong> comenzó en 2019, cuando descubrí el mundo <strong>Agile</strong> y una forma de trabajar con la que conecté desde el primer momento.</p>
+      <p>Desde entonces, he trabajado creando y evolucionando productos digitales en entornos dinámioos, donde la adaptación, la colaboración y la mejora continua son clave.</p>     
+      <p>Con el objetivo de entender mejor el ciclo completo de producto, he iniciado un camino en el <strong>desarrollo frontend</strong>, construyendo proyectos desde cero que me permiten experimentar con la lógica, el diseño y la experiencia de usuario.</p>
+      <p>Mi enfoque combina <strong>pensamiento de producto, organización y resolución de problemas</strong>, buscando siempre crear soluciones útiles y bien diseñadas.</p>
     </section>
     
     <section>
       <h2>Proyectos</h2>
       <div class="projects">
         <article class="card">
-          <h3>🐍 El Juego de la Serpiente</h3>
+          <img src="images/snake.png" alt="Juego Snake" class="project-image">
+          <h3>🐍 Snake Game</h3>
           <p><em>Creado en Mayo de 2026</em></p>
-          <p>Un videojuego inspirado en el clásico Snake de Nokia, desarrollado desde cero con HTML, CSS y JavaScript, utilizando Canvas.
-            Contiene animaciones y pequeños detalles visuales que le dan personalidad al juego, incluyendo frutas especiales, bombas y muros dinámicos.
-            El juego es totalmente responsive y se puede jugar tanto en ordenador como en dispositivos móviles.</p>
+          <p>Un videojuego inspirado en el clásico Snake de Nokia, desarrollado desde cero con HTML, CSS y JavaScript, utilizando Canvas.</p>
+          <p>Incluye mecánicas dinámicas con frutas especiales, obstáculos y variaciones de dificultad, con un enfoque claro en la experiencia de usuario.</p>
+          <p>El proyecto está diseñado para funcionar tanto en escritorio como en dispositivos móviles, incorporando controles adaptados y una interfaz responsive.</p>
           <!--div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
             <span class="tag">JavaScript</span>
             <span class="tag">Canvas</span>
-        </div-->
+          </div-->
           <div class="links">
             <a href="https://rqlia23.github.io/Snake-Game/" target="_blank">Jugar</a>
             <!--<a class="secondary" href="https://github.com/rqlia23/Snake-Game" target="_blank">Código</a>-->
           </div>
+        </article> 
       </div>
     </section>
 
     <section>
       <div class="projects">
         <article class="card">
-          <h3>🧱 El Juego de los Ladrillos</h3>
+          <img src="images/breakout.png" alt="Juego Breakout" class="project-image">
+          <h3>🧱 Breakout Game</h3>
           <p><em>Creado en Mayo de 2026</em></p>
-          <p>Videojuego inspirado en el clásico Breakout, desarrollado desde cero con HTML, CSS y JavaScrip, utilizando Canvas.
-            Incluye rebote realista, animaciones, sistema de puntuación y vidas, además de power-ups efectos visuales como partículas, ofreciendo una experiencia dinámica tanto en escritorio como en dispositivos móviles, ya que es totalmente responsive.</p>
+          <p>Videojuego inspirado en el clásico Breakout, desarrollado desde cero con HTML, CSS y JavaScrip, utilizando Canvas, y centrado en la creación de una experiencia interactiva fluida.</p>
+          <p>Incluye físicas de rebote, sistema de puntuación y vidas, power-ups y efectos visuales como partículas, mejorando la sensación de juego y el feedback al usuario-</p>
+          <p>Adaptado para dispositivos móviles y escritorio, integrando diferentes tipos de control (teclado y táctil).</p>
           <!--div class="tags">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
             <span class="tag">JavaScript</span>
             <span class="tag">Canvas</span>
-        </div-->
+          </div-->
           <div class="links">
             <a href="https://rqlia23.github.io/Breakout-Game/" target="_blank">Jugar</a>
           </div>
+         </article> 
       </div>
     </section>
 
     <section>
       <div class="projects">
         <article class="card">
-          <h3>📊 Dashboard</h3>
-          <p>Dashboard interactivo tipo Saas con métricas, pensado desde la perspectiva de Product Owner y enfocado a UX.
-            Simula datos de uso en tiempo real utilizando JavaScript, con persistencia mediante localStorage para recrear el comportamiento de una aplicación real sin backend.</p>
+          <img src="images/dashboard.png" alt="Dashboard" class="project-image">
+          <h3>📊 Dashboard de producto</h3>
+          <p>Dashboard interactivo tipo Saas desarrollado con JavaScript, diseñado desde una perspectiva de producto y centrado en la experiencia del usuario.</p>
+          <p>Simula métricas en tiempo real, permitiendo visualizar datos mediante gráficos con Chart.js, aplicar filtros dinámicos y navegar entre secciones mediante una interfaz tipo SPA.</p>
+          <p>Incluye persistencia mediante localStorage para recrear el comportamiento de una aplicación real sin necesidad de backend.</p>
           <div class="links">
             <a href="https://rqlia23.github.io/Dashboard/" target="_blank">Ver dashboard</a>
           </div>
+        </article>
       </div>
     </section>    
-    
-    <!--section>
-      <h2>Aprendizaje</h2>
-      <p>Con este proyecto he aprendido y reforzado conceptos clave del desarrollo web y de videojuegos:</p>
-      <ul class="learning">
-        <li>Uso de <strong>JavaScript</strong> para gestionar la lógica del juego y los estados.</li>
-        <li>Dibujo y animación con <strong>Canvas</strong>.</li>
-        <li>Gestión de eventos de teclado y táctiles para controles multiplataforma.</li>
-        <li>Diseño de mecánicas de juego: niveles, dificultad progresiva y obstáculos.</li>
-        <li>Mejora de la experiencia de usuario con animaciones, mensajes y reinicios automáticos.</li>
-      </ul>
-    </section-->
 
   </main>
 
